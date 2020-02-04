@@ -33,7 +33,6 @@ const getPosts = graphql`
 export default () => {
   const response = useStaticQuery(getPosts)
   const posts = response.allMdx.edges
-  console.log("posts", posts)
   return (
     <Layout>
       <PostList posts={posts} />
