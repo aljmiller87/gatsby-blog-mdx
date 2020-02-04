@@ -8,7 +8,6 @@ import { MDXRenderer } from "gatsby-plugin-mdx"
 const PostTemplate = ({ data }) => {
   const { body } = data.mdx
   const { title, date, author, image } = data.mdx.frontmatter
-  console.log(image)
   const img = image.childImageSharp.fluid
   return (
     <Layout>
